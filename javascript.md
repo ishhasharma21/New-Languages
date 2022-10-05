@@ -26,6 +26,33 @@ x = 20;
 var x;
 ```
 
+### Events 
+
+|Event |	Description|
+|---|---|
+|onchange |	An HTML element has been changed |
+|onclick |	The user clicks an HTML element|
+|onmouseover |	The user moves the mouse over an HTML element |
+|onmouseout	|The user moves the mouse away from an HTML element |
+|onkeydown|	The user pushes a keyboard key |
+|onload	|The browser has finished loading the page |
 
 
+### Strings
 
+Strings can also be declared as objects. For example : 
+
+```
+let name = new String ("Isha");
+```
+
+However, this is not advised since javascript objects can never be compared to one another. I won't be able tof do this : 
+
+```
+let name = new String ("Isha");
+let callMe = new String ("Isha");
+return (name == callMe);
+return (name === callMe);
+```
+
+Output will be false. 
